@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import PropTypes from 'prop-types';
 import './App.css';
 
 function App() {
@@ -20,5 +20,10 @@ function OtherComponent({ name, greeting = 'Hello' }) {
     </h1>
   );
 }
+
+OtherComponent.propTypes = {
+  name: PropTypes.string.isRequired,
+  greeting: PropTypes.string.isRequired,
+};
 
 export default App;
