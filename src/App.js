@@ -1,13 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
-
+import { Counter } from './Counter';
 function App() {
   return (
     <div className="App">
-      <h1>I like turtles</h1>
-      <OtherComponent name="Mike" greeting="Yo" />
-      <OtherComponent name="PepPep" />
+      <Counter />
     </div>
   );
 }
