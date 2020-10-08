@@ -3,9 +3,12 @@ import PropTypes from 'prop-types';
 import './App.css';
 import { Counter } from './Counter';
 import { Accordian } from './Accordian';
+import { Input } from './Input';
+
 function App() {
   return (
     <div className="App">
+      <Input />
       <Counter />
       <Accordian />
     </div>
