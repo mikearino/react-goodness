@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Movie } from './Movie';
 import { Filter } from '../Filter';
 
@@ -13,23 +13,16 @@ const movies = [
     name: 'Man of Iron',
   },
 ];
+
 export function MoviesList() {
   const [filter, setFilter] = useState('');
-  // const varName = userRef(initialValue)
-  const ulRef = useRef(null);
-  const ref = useRef(null);
+
+  useEffect(() => {
+    console.log('hit effect');
+  }, [filter]);
 
   return (
-    <div ref={ulRef}>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          console.log(ref.current.value);
-        }}
-      >
-        <input ref={ref} />
-        <button />
-      </form>
+    <div>
       <Filter filter={filter} setFilter={setFilter} />
       <ul>
         {movies
