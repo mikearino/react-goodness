@@ -1,12 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import { MoviesList } from './movies/MoviesList';
+import { MovieDetail } from './movies/MovieDetail';
 
 function App() {
   return (
     <div className="App">
-      <MoviesList />
+      <Router>
+        <Switch>
+          <Route path="/details">
+            <MovieDetail />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/">
+            <MoviesList />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
