@@ -12,8 +12,6 @@ function App() {
           <Route path="/movie/:id">
             <MovieDetail />
           </Route>
-        </Switch>
-        <Switch>
           <Route path="/">
             <MoviesList />
           </Route>
