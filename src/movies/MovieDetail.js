@@ -42,13 +42,15 @@ export function MovieDetail() {
           src={IMAGE_URL + POSTER_SIZE + movie.poster_path}
           alt={movie.title + ' Poster'}
         />
-        <h1>{movie.title}</h1>
-        <p>{movie.overview}</p>
-        <ul>
-          {movie.genres.map((genre) => (
-            <li key={genre.id}>{genre.name}</li>
-          ))}
-        </ul>
+        <div>
+          <h1>{movie.title}</h1>
+          <p>{movie.overview}</p>
+          <ul>
+            {movie.genres.map((genre) => (
+              <li key={genre.id}>{genre.name}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
