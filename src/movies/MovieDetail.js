@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const BASE_URL = 'https://api.themoviedb.org/3/movie/';
 
@@ -29,7 +30,6 @@ export function MovieDetail() {
   useEffect(() => {
     getMovie();
   }, [id]);
-
   if (!movie.title) return null;
   return (
     <div>
@@ -53,6 +53,11 @@ export function MovieDetail() {
             ))}
           </ul>
         </div>
+      </div>
+      <div>
+        <Link to={`/`}>
+          <h3 className="back">Home</h3>
+        </Link>
       </div>
     </div>
   );
