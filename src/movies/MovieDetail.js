@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 const BASE_URL = 'https://api.themoviedb.org/3/movie/';
 
-const API_KEY = '?api_key=941007440b9046ef5468ea86902a8290';
+const API_KEY = ;
 
 const IMAGE_URL = 'https://image.tmdb.org/t/p/';
 const BACKDROP_SIZE = 'original';

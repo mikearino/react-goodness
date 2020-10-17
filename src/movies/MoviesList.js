@@ -3,7 +3,7 @@ import { Movie } from './Movie';
 import { Filter } from '../Filter';
 
 const API_URL =
-  'https://api.themoviedb.org/3/discover/movie?api_key=941007440b9046ef5468ea86902a8290&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1';
+  'https://api.themoviedb.org/3/discover/movie?api_key=&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1';
 const CONFIG_URL =
   'https://api.themoviedb.org/3/configuration?api_key=941007440b9046ef5468ea86902a8290';
 
